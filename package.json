@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+  "dev:web": "npm run dev --prefix apps/web",
+  "dev:api": "npm run dev --prefix apps/api",
+  "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\""
+}
+
+}
