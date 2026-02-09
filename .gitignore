@@ -4,3 +4,11 @@ GitSummary.txt
 repo-tree.txt
 
 apps/api/db/seeds/dist/
+
+# dependencies / generated
+apps/api/node_modules/
+apps/api/src/dist/
+
+# env files
+.env
+apps/api/.env

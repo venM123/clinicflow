@@ -1,8 +1,11 @@
 const express = require('express');
 const pool = require('./db');
+const cookieParser = require('cookie-parser');
+const { authConfig } = require('./config/auth');
 
 const app = express();
 app.use(express.json());
+app.use(cookieParser(authConfig.sessionSecret));
 
 app.get('/health', (req, res) =>{
     res.json({status: 'ok', service: 'clinicflow-api'});
