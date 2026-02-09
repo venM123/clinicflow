@@ -12,3 +12,9 @@ apps/api/src/dist/
 # env files
 .env
 apps/api/.env
+
+
+apps/api/src/config/dist/
+apps/api/src/routes/dist/
+apps/api/src/auth/dist/
+apps/api/src/public/dist/

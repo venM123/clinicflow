@@ -3,9 +3,11 @@ const pool = require('./db');
 const cookieParser = require('cookie-parser');
 const { authConfig } = require('./config/auth');
 const authRoutes = require('./routes/auth.routes');
+const path = require('path');
 
 const app = express();
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser(authConfig.sessionSecret));
 app.use('/auth', authRoutes);
 app.get('/health', (req, res) =>{
