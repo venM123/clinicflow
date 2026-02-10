@@ -20,6 +20,7 @@
   <input id="password" type="password" value="admin123" />
 
   <button id="loginBtn">Login</button>
+  <button id="logoutBtn">Logout</button>
   <button id="meBtn">Check /auth/me</button>
 
   <h3>Result</h3>
@@ -52,6 +53,12 @@
       });
       show('LOGIN', status, data);
     };
+
+    document.getElementById('logoutBtn').onclick = async () => {
+    const { status, data } = await request('/auth/logout', { method: 'POST' });
+    show('LOGOUT', status, data);
+    };
+
 
     document.getElementById('meBtn').onclick = async () => {
       const { status, data } = await request('/auth/me', { method: 'GET' });
