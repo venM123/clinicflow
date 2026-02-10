@@ -1,0 +1,24 @@
+# personal/local helper notes
+notes/
+GitSummary.txt
+repo-tree.txt
+
+apps/api/db/seeds/dist/
+
+# dependencies / generated
+apps/api/node_modules/
+apps/api/src/dist/
+
+# env files
+.env
+apps/api/.env
+
+
+apps/api/src/config/dist/
+apps/api/src/routes/dist/
+apps/api/src/auth/dist/
+apps/api/src/public/dist/
+
+apps/api/src/middleware/dist/
+
+apps/api/src/services/dist/
